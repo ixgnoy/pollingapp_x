@@ -4,7 +4,7 @@ pragma solidity ^0.8.27;
 import "hardhat/console.sol";
 
 contract SingleElectionVoting {
-
+// ixgnoy
     struct Voter {
         address voterAddress;
         string name;
@@ -40,7 +40,7 @@ contract SingleElectionVoting {
         require(msg.sender == admin, "Only admin can perform this action.");
         _;
     }
-
+    //ixgnoy
     modifier onlyBefore(uint256 _timestamp) {
         require(block.timestamp < _timestamp, "Action not allowed after this time.");
         _;
@@ -136,7 +136,7 @@ contract SingleElectionVoting {
                 maxVotes = candidate.voteCount;
                 winnerAddress = candidateAddress;
             }
-        }
+        } // ixgnoy
 
         if (winnerAddress != address(0)) {
             Candidate storage winner = election.candidateList[winnerAddress];
@@ -182,6 +182,7 @@ contract SingleElectionVoting {
         }
         return voters;
     }
-}
+} // Feel free to adding more features :)
+  // By ixgnoy
 
 
