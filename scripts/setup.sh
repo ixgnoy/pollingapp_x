@@ -1,4 +1,4 @@
-#1. open folder hellosolidity inside hardhat_template folder
+#1. Start here
 
 #2. cd into backend
 cd backend
