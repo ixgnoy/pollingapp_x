@@ -12,7 +12,7 @@ import {
   hasElectionFinalizedFromContract,
   getWinner,
 } from "../contract"; // Ensure these functions are imported correctly
-import { PINATA_JWT } from "../config";
+import { PINATA_JWT } from "../config"; //ixgnoy
 import placeholderImage from "../Loading.png";
 
 const AdminPanel = () => {
@@ -37,7 +37,7 @@ const AdminPanel = () => {
   const [candidateImageHash, setCandidateImageHash] = useState("");
   const [mapCandidateImages, setmapCandidateImages] = useState({});
 
-  const getFileFromIPFS = async (cid) => {
+  const getFileFromIPFS = async (cid) => { // Uisng IPFS - ixgnoy
     try {
       if (!cid) {
         throw new Error("CID is required to fetch the image.");
@@ -74,7 +74,7 @@ const AdminPanel = () => {
       );
 
       const response = await fetch(uploadRequest);
-
+      // ixgnoy
       if (!response.ok) {
         throw new Error("Failed to upload file to IPFS via Pinata.");
       }
@@ -228,7 +228,7 @@ const AdminPanel = () => {
     } catch (error) {
       alert(`Error adding candidate: ${error.message}`);
     }
-  };
+  }; //ixgnoy
 
   // Function to handle adding a voter
   const handleAddVoter = async () => {
@@ -255,7 +255,7 @@ const AdminPanel = () => {
     } catch (error) {
       alert(`Error adding voter: ${error.message}`);
     }
-  };
+  }; //ixgnoy
 
   const handleStartElection = async () => {
     try {
@@ -422,7 +422,7 @@ const AdminPanel = () => {
           )}
         </ul>
       </div>
-
+      /* ixgnoy */
       {/* Section to manage voters */}
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>Manage Voters</h2>
