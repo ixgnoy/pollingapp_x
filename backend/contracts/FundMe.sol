@@ -13,7 +13,7 @@ contract FundMe {
         string name;
         uint256 fundingAmount; // Total funding in wei
         uint256 dollarAmount;   // Total funding in USD (string for "N/A" or calculated value)
-    }
+    } //ixgnoy
 
 //3. Add properties to smart contracts
     AggregatorV3Interface internal priceFeed; // Mocked Chainlink Price Feed
@@ -24,7 +24,7 @@ contract FundMe {
 //4. Add Modifier to set constraint
     function _isCandidate(address _candidateAddress) internal view returns (bool) {
         return candidates[_candidateAddress].candidateAddress != address(0);
-    }
+    } //ixgnoy
 
 //5. Add events to update UI
     event CandidateFunded(address indexed candidate, uint256 ethAmount);
@@ -42,7 +42,8 @@ contract FundMe {
             result[i] = candidates[candidateAddresses[i]];
         }
         return result;
-    }
+    } //ixgnoy
+      // Financial Transparency : )
 
     function fundCandidate(address _candidateAddress, string memory _name) external payable {
         require(msg.value > 0, "Funding amount must be greater than 0");
