@@ -42,20 +42,13 @@ Wallet Integration: MetaMask / Web3-compatible wallets
 <br>
 
 ## ✨ Features
-1. Admin and Voting Panels
-<br>
-2. Smart Contract-based vote casting
-<br>
-3. Event listening for VoteCast
-<br>
-4. Off-chain IPFS-based voter proof archival
-<br>
-5. Oracle-integrated real-world data validation
-<br>
-6. L2 interoperability and gas optimization
-<br>
-7. Secure, transparent election process
-<br>
+1. Admin and Voting Panels<br>
+2. Smart Contract-based vote casting<br>
+3. Event listening for VoteCast<br>
+4. Off-chain IPFS-based voter proof archival<br>
+5. Oracle-integrated real-world data validation<br>
+6. L2 interoperability and gas optimization<br>
+7. Secure, transparent election process<br>
 
 ## 📦 IPFS Integration
 ### What is IPFS?
