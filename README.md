@@ -24,88 +24,78 @@
 ![Chainlink](https://img.shields.io/badge/Chainlink%20Oracle-375BD2?style=for-the-badge&logo=chainlink&logoColor=white)
 
 ---
-🔍 Introduction
+## 🔍 Introduction
 This is a Web3-based decentralized voting application built with Ethereum, Solidity, Hardhat, React, and IPFS. It allows users to securely cast votes through a smart contract deployed on the Ethereum blockchain. IPFS is used to store immutable records and assets off-chain, and Oracle integration supports real-world event validation on Layer 2.
-
-🧱 Tech Stack
+<br>
+## 🧱 Tech Stack
 Frontend: React, JavaScript, Bootstrap
-
+<br>
 Blockchain: Solidity, Hardhat, Ethereum (RPC)
-
+<br>
 Off-chain Storage: IPFS
-
+<br>
 Oracle: Chainlink / L2 Oracle Protocols
-
+<br>
 Smart Contract Deployment & Testing: Hardhat
-
+<br>
 Wallet Integration: MetaMask / Web3-compatible wallets
+<br>
 
-✨ Features
-Admin and Voting Panels
+## ✨ Features
+1. Admin and Voting Panels
+<br>
+2. Smart Contract-based vote casting
+<br>
+3. Event listening for VoteCast
+<br>
+4. Off-chain IPFS-based voter proof archival
+<br>
+5. Oracle-integrated real-world data validation
+<br>
+6. L2 interoperability and gas optimization
+<br>
+7. Secure, transparent election process
+<br>
 
-Smart Contract-based vote casting
-
-Event listening for VoteCast
-
-Off-chain IPFS-based voter proof archival
-
-Oracle-integrated real-world data validation
-
-L2 interoperability and gas optimization
-
-Secure, transparent election process
-
-📦 IPFS Integration
-What is IPFS?
+## 📦 IPFS Integration
+### What is IPFS?
 IPFS (InterPlanetary File System) is a distributed system for storing and accessing files, websites, and data in a peer-to-peer network.
+<br>
+### Why use IPFS in this DApp?
+1. Decentralized file storage
+<br>
+2. Permanent, tamper-proof data
+<br>
+3. Cryptographic hashes for integrity
+<br>
+4. Reduces gas by storing large data off-chain
+<br>
 
-Why use IPFS in this DApp?
+### Use cases in this project:
+<br>
+1. Store candidate's party image<br>
+2. Retrieve and display IPFS content via https://ipfs.io/ipfs/{CID}
+<br>
 
-Decentralized file storage
+### Example flow:
+1. Admin uploads a manifesto PDF or campaign media to IPFS. (For example, candidate's party's logo)<br>
+2. IPFS returns a content hash (CID)<br>
+3. CID is stored in the blockchain smart contract<br>
+4. Frontend fetches the file via public IPFS gateways<br>
 
-Permanent, tamper-proof data
-
-Cryptographic hashes for integrity
-
-Reduces gas by storing large data off-chain
-
-Use cases in this project:
-
-Store voter identities, candidate manifestos, or election certificates as IPFS hashes
-
-Retrieve and display IPFS content via https://ipfs.io/ipfs/{CID}
-
-Example flow:
-
-Admin uploads a manifesto PDF or campaign media to IPFS
-
-IPFS returns a content hash (CID)
-
-CID is stored in the blockchain smart contract
-
-Frontend fetches the file via public IPFS gateways
-
-🛰️ Layer 2 Blockchain Oracle Integration
-What are Oracles?
+## 🛰️ Layer 2 Blockchain Oracle Integration
+### What are Oracles?
 Oracles bridge the gap between on-chain and off-chain data. They fetch, verify, and relay external data (like timestamps, identity checks, or event triggers) into smart contracts.
 
-Why Oracle + L2?
+### Why Oracle + L2?
+1. Lower gas fees (via L2 solutions like Arbitrum/Optimism)<br>
+2. Real-world conditional logic (e.g., “voting closes 10 minutes after real-world event X”) <br>
+3. External API or timestamp validation<br>
+4. Resilience and scalability<br>
 
-Lower gas fees (via L2 solutions like Arbitrum/Optimism)
+### Use cases in this project:
+1. Fecth and dispalay the logo image of the candidates' party
 
-Real-world conditional logic (e.g., “voting closes 10 minutes after real-world event X”)
-
-External API or timestamp validation
-
-Resilience and scalability
-
-Use cases in this project:
-
-Validate a voter’s eligibility via an external system
-
-Trigger election closure after Chainlink timestamp
-
-Query real-time regional results (aggregated via Oracle feed)
 
 🗺️ Architecture Diagram
 <img src="Architecture diagram/diagram.png"/>
