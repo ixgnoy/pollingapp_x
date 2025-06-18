@@ -87,4 +87,4 @@ Oracles bridge the gap between on-chain and off-chain data. They fetch, verify, 
 
 
 🗺️ Architecture Diagram
-<img src="Architecture diagram/diagram.png"/>
+<img src="Architecture diagram/pollingapp_x.jpeg"/>
