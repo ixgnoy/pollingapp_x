@@ -55,14 +55,10 @@ Wallet Integration: MetaMask / Web3-compatible wallets
 IPFS (InterPlanetary File System) is a distributed system for storing and accessing files, websites, and data in a peer-to-peer network.
 <br>
 ### Why use IPFS in this DApp?
-1. Decentralized file storage
-<br>
-2. Permanent, tamper-proof data
-<br>
-3. Cryptographic hashes for integrity
-<br>
-4. Reduces gas by storing large data off-chain
-<br>
+1. Decentralized file storage<br>
+2. Permanent, tamper-proof data<br>
+3. Cryptographic hashes for integrity<br>
+4. Reduces gas by storing large data off-chain<br>
 
 ### Use cases in this project:
 <br>
